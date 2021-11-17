@@ -15,8 +15,6 @@ function hideOverlay() {
   overlay.style.display = "none";
 }
 
-function setPlayerName() {}
-
 function openPlayerConfig(event) {
   editedPlayer = +event.target.dataset.playerid;
   //clear the form
