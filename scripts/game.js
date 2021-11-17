@@ -1,6 +1,7 @@
 function clearGame() {
   // loop through all of the li and clear the text and classes
   for (let li of gameBoard.children) {
+    showWinner();
     li.textContent = "";
     li.classList.remove("disabled");
     gameOver.style.display = "none";
@@ -70,5 +71,17 @@ function checkForWinner() {
 
   if (round == 9) {
     //Draw
+    showDraw();
+    gameOver.style.display = "block";
   }
+}
+
+function showDraw() {
+  winner.style.display = "none";
+  draw.style.display = "block";
+}
+
+function showWinner() {
+  winner.style.display = "block";
+  draw.style.display = "none";
 }

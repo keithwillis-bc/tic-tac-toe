@@ -22,6 +22,8 @@ const gameBoard = document.getElementById("game-board");
 const activePlayerName = document.getElementById("active-player-name");
 const gameOver = document.getElementById("game-over");
 const winnerName = document.getElementById("winner-name");
+const draw = document.getElementById("draw");
+const winner = document.getElementById("winner");
 
 editPlayer1.addEventListener("click", openPlayerConfig);
 
